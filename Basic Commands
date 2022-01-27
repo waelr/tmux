@@ -1,0 +1,39 @@
+- note: I will add the prefix [key-bind] shortcut based the command 
+        default prefix is [ctr+b] : 
+        
+ = sessions = : 
+1 - create a new session 
+> tmux
+or 
+> tmux new-session
+- by default session names as 0,1,2,
+- create a new session with given name eg: mySec1
+> tmux new-session -s mySec1
+- create session with given name and name first window
+> tmux new-session -s ses1 -n win1
+
+2- rename session 
+- rename session to ses1
+>tmux rename-session ses1
+shortcut : [ctr+b] $ 
+
+3- switch between sessions :
+- to switch to another session first detach from current one then attch to another one .
+- detach from session  
+>tmux detach 
+shortcut : [ctrl+b] d
+- attach to session
+>tmux attach 
+- -t specify target session name 
+>tmux attach -t s2
+
+shortcut : 
+ [ctrl+b] ) : next session 
+ [ctrl+b] ( : previous session 
+ [ctrl+b] w  or [ctrl+b] s  : (this can be also used to switch to given windows)
+ -------------------------------
+ 
+
+
+
+
